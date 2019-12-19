@@ -283,13 +283,22 @@ border: 0;
                <number>50</number>
               </property>
               <item>
-               <widget class="QListView" name="imageWindow">
+               <widget class="QLabel" name="imageWindow">
+                <property name="minimumSize">
+                 <size>
+                  <width>830</width>
+                  <height>528</height>
+                 </size>
+                </property>
                 <property name="styleSheet">
                  <string notr="true">background-color: rgb(222, 222, 227);
 border: 0;</string>
                 </property>
-                <property name="dragDropMode">
-                 <enum>QAbstractItemView::DragDrop</enum>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
                 </property>
                </widget>
               </item>
@@ -337,30 +346,57 @@ border: 0;
                   </property>
                  </widget>
                 </item>
-                <item row="0" column="0" colspan="2">
-                 <widget class="QLabel" name="pixelizationLevelLabel">
+                <item row="0" column="3">
+                 <widget class="QPushButton" name="reset">
                   <property name="minimumSize">
                    <size>
-                    <width>300</width>
+                    <width>230</width>
                     <height>50</height>
                    </size>
                   </property>
                   <property name="maximumSize">
                    <size>
-                    <width>16777215</width>
+                    <width>230</width>
                     <height>50</height>
                    </size>
                   </property>
                   <property name="font">
                    <font>
                     <family>Roboto</family>
-                    <pointsize>21</pointsize>
+                    <pointsize>12</pointsize>
                    </font>
                   </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton:!hover {
+background-color: rgb(222, 222, 227);
+border: 0;
+}
+
+QPushButton:hover {
+background-color: rgb(210, 208, 208);
+border: 0;
+}</string>
+                  </property>
                   <property name="text">
-                   <string>Степень пикселизации</string>
+                   <string>Сброс</string>
                   </property>
                  </widget>
+                </item>
+                <item row="2" column="2">
+                 <spacer name="sliderSpacerRight">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeType">
+                   <enum>QSizePolicy::Expanding</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>195</width>
+                    <height>50</height>
+                   </size>
+                  </property>
+                 </spacer>
                 </item>
                 <item row="2" column="1">
                  <widget class="QSlider" name="pixelizationLevelSlider">
@@ -426,57 +462,30 @@ border-radius: 4px;
                   </property>
                  </widget>
                 </item>
-                <item row="0" column="3">
-                 <widget class="QPushButton" name="reset">
+                <item row="0" column="0" colspan="2">
+                 <widget class="QLabel" name="pixelizationLevelLabel">
                   <property name="minimumSize">
                    <size>
-                    <width>230</width>
+                    <width>300</width>
                     <height>50</height>
                    </size>
                   </property>
                   <property name="maximumSize">
                    <size>
-                    <width>230</width>
+                    <width>16777215</width>
                     <height>50</height>
                    </size>
                   </property>
                   <property name="font">
                    <font>
                     <family>Roboto</family>
-                    <pointsize>12</pointsize>
+                    <pointsize>21</pointsize>
                    </font>
                   </property>
-                  <property name="styleSheet">
-                   <string notr="true">QPushButton:!hover {
-background-color: rgb(222, 222, 227);
-border: 0;
-}
-
-QPushButton:hover {
-background-color: rgb(210, 208, 208);
-border: 0;
-}</string>
-                  </property>
                   <property name="text">
-                   <string>Сброс</string>
+                   <string>Степень пикселизации</string>
                   </property>
                  </widget>
-                </item>
-                <item row="2" column="2">
-                 <spacer name="sliderSpacerRight">
-                  <property name="orientation">
-                   <enum>Qt::Horizontal</enum>
-                  </property>
-                  <property name="sizeType">
-                   <enum>QSizePolicy::Expanding</enum>
-                  </property>
-                  <property name="sizeHint" stdset="0">
-                   <size>
-                    <width>195</width>
-                    <height>50</height>
-                   </size>
-                  </property>
-                 </spacer>
                 </item>
                 <item row="0" column="2">
                  <spacer name="horizontalSpacer">
