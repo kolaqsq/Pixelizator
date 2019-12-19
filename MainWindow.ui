@@ -283,18 +283,24 @@ border: 0;
                <number>50</number>
               </property>
               <item>
-               <widget class="QListView" name="imageWindow">
+               <widget class="QLabel" name="imageWindow">
                 <property name="styleSheet">
                  <string notr="true">background-color: rgb(222, 222, 227);
 border: 0;</string>
                 </property>
-                <property name="dragDropMode">
-                 <enum>QAbstractItemView::DragDrop</enum>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="scaledContents">
+                 <bool>false</bool>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
                 </property>
                </widget>
               </item>
               <item>
-               <layout class="QGridLayout" name="menu" rowstretch="0,0,0">
+               <layout class="QGridLayout" name="menu" rowstretch="0,0,0" columnstretch="0,0,0,0">
                 <property name="horizontalSpacing">
                  <number>0</number>
                 </property>
