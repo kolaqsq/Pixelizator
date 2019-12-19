@@ -5,16 +5,23 @@ from PyQt5.QtWidgets import *
 from PyQt5.uic import loadUi
 
 
-class MainWindowLight(QMainWindow):
+class MainWindow(QMainWindow):
     def __init__(self, *args, **kwargs):
-        super(MainWindowLight, self).__init__(*args, **kwargs)
-        loadUi("MainWindowLight.ui", self)
+        super(MainWindow, self).__init__(*args, **kwargs)
+        loadUi("MainWindow.ui", self)
+        self.settings.clicked.connect(lambda: MainWindow.change(self, 1))
+        self.settingsHome.clicked.connect(lambda: MainWindow.change(self, 0))
+        self.show()
+
+
+    def change(self, i):
+        self.pages.setCurrentIndex(i)
 
 
 def main():
     app = QtWidgets.QApplication(sys.argv)
-    window = MainWindowLight()
-    window.show()
+    window = MainWindow()
+    # window.show()
     app.exec_()
 
 
