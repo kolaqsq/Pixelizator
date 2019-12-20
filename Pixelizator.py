@@ -1,13 +1,14 @@
+import os.path
+import shutil
 import sys
 
 from PIL import Image
 from PyQt5 import QtWidgets
-from PyQt5.QtCore import *
+from PyQt5.QtCore import Qt, QUrl
 from PyQt5.QtGui import QPixmap, QDesktopServices
-from PyQt5.QtWidgets import *
+from PyQt5.QtWidgets import QMainWindow, QFileDialog
 from PyQt5.uic import loadUi
-import shutil
-import os.path
+
 
 class MainWindow(QMainWindow):
     def __init__(self, *args, **kwargs):
@@ -103,6 +104,7 @@ class MainWindow(QMainWindow):
         result = imgSmall.resize(img.size, Image.NEAREST)  # Scale back up using NEAREST to original size
         result.save('alg-img/result.png')  # Save on jpg or png
         self.changeScale()
+
 
 def main():
     app = QtWidgets.QApplication(sys.argv)
