@@ -7,6 +7,7 @@ from PyQt5.QtGui import QPixmap
 from PyQt5.QtWidgets import *
 from PyQt5.uic import loadUi
 import shutil
+import os.path
 
 class MainWindow(QMainWindow):
     def __init__(self, *args, **kwargs):
@@ -21,7 +22,8 @@ class MainWindow(QMainWindow):
 
     def init_ui(self):
         self.pixelizationLevelSlider.valueChanged[int].connect(self.changeValue)
-        self.chooseBtn.clicked.connect(self.showDialog)
+        self.chooseBtn.clicked.connect(self.showOpenDialog)
+        self.saveBtn.clicked.connect(self.showSaveDialog)
 
     def changeValue(self, value):
         # slider from 1 to 350
@@ -53,7 +55,7 @@ class MainWindow(QMainWindow):
         pix = pix.scaled(self.imageWindow.size(), Qt.KeepAspectRatio, transformMode=Qt.SmoothTransformation)
         self.imageWindow.setPixmap(pix)
 
-    def showDialog(self):
+    def showOpenDialog(self):
         fname = QFileDialog.getOpenFileName(self, 'Open file', 'c:\\', "Image files (*.jpg *.png)")[0]
         # if button close pushed
         if fname != '':
@@ -74,6 +76,12 @@ class MainWindow(QMainWindow):
         result = imgSmall.resize(img.size, Image.NEAREST)  # Scale back up using NEAREST to original size
         result.save('alg-img/result.png')  # Save on jpg or png
         self.changeScale()
+
+    def showSaveDialog(self):
+        fname = QFileDialog.getSaveFileName(self, 'Save file', 'c:\\', "Image files (*.png)")[0]
+        # if user want to save nonexistent file
+        if os.path.isfile('alg-img/result.png'):
+            shutil.move('alg-img/result.png', fname)
 
 def main():
     app = QtWidgets.QApplication(sys.argv)
