@@ -32,6 +32,12 @@ class MainWindow(QMainWindow):
         scalew = int((width / 1000) * slider)
         scaleh = int((height / 1000) * slider)
 
+        # if user choose little picture
+        if scalew <= 0:
+            scalew = 1
+        if scaleh <= 0:
+            scaleh = 1
+
         # Resize smoothly down to scalew x scaleh pixels
         imgSmall = img.resize((scalew, scaleh), resample=Image.BILINEAR)
 
