@@ -88,9 +88,26 @@ class MainWindow(QMainWindow):
     def link(self, linkStr):
         QDesktopServices.openUrl(QUrl(linkStr))
 
+    def showPicOn(self):
+        img = Image.open('alg-img/begin.jpg')
+        shutil.copyfile('alg-img/begin.jpg', r'alg-img/algimg.jpg')
+        width, height = img.size
+
+        slider = 100
+        scalew = int((width / 1000) * slider)
+        scaleh = int((height / 1000) * slider)
+
+        # Resize smoothly down to scalew x scaleh pixels
+        imgSmall = img.resize((scalew, scaleh), resample=Image.BILINEAR)
+
+        result = imgSmall.resize(img.size, Image.NEAREST)  # Scale back up using NEAREST to original size
+        result.save('alg-img/result.png')  # Save on jpg or png
+        self.changeScale()
+
 def main():
     app = QtWidgets.QApplication(sys.argv)
     window = MainWindow()
+    window.showPicOn()
     window.init_ui()
     app.exec_()
 
