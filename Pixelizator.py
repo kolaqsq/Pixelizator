@@ -6,10 +6,7 @@ from PyQt5.QtCore import *
 from PyQt5.QtGui import QPixmap
 from PyQt5.QtWidgets import *
 from PyQt5.uic import loadUi
-
-img = Image.open("alg-img/testimg.jpg")
-width, height = img.size
-
+import shutil
 
 class MainWindow(QMainWindow):
     def __init__(self, *args, **kwargs):
@@ -24,19 +21,22 @@ class MainWindow(QMainWindow):
 
     def init_ui(self):
         self.pixelizationLevelSlider.valueChanged[int].connect(self.changeValue)
+        self.chooseBtn.clicked.connect(self.showDialog)
 
     def changeValue(self, value):
         # slider from 1 to 350
+        img = Image.open('alg-img/algimg.jpg')
+        width, height = img.size
+
         slider = value
         scalew = int((width / 1000) * slider)
         scaleh = int((height / 1000) * slider)
 
         # Resize smoothly down to scalew x scaleh pixels
         imgSmall = img.resize((scalew, scaleh), resample=Image.BILINEAR)
-        # Scale back up using NEAREST to original size
-        result = imgSmall.resize(img.size, Image.NEAREST)
-        # Save on jpg or png
-        result.save('alg-img/result.png')
+
+        result = imgSmall.resize(img.size, Image.NEAREST)  # Scale back up using NEAREST to original size
+        result.save('alg-img/result.png')  # Save on jpg or png
         self.changeScale()
 
     def resizeEvent(self, event):
@@ -47,6 +47,27 @@ class MainWindow(QMainWindow):
         pix = pix.scaled(self.imageWindow.size(), Qt.KeepAspectRatio, transformMode=Qt.SmoothTransformation)
         self.imageWindow.setPixmap(pix)
 
+    def showDialog(self):
+        fname = QFileDialog.getOpenFileName(self, 'Open file', 'c:\\', "Image files (*.jpg *.png)")[0]
+        # if button close pushed
+        if fname != '':
+            shutil.copyfile(fname, r'alg-img/algimg.jpg')
+            self.showPic()
+
+    def showPic(self):
+        img = Image.open('alg-img/algimg.jpg')
+        width, height = img.size
+
+        slider = 100
+        scalew = int((width / 1000) * slider)
+        scaleh = int((height / 1000) * slider)
+
+        # Resize smoothly down to scalew x scaleh pixels
+        imgSmall = img.resize((scalew, scaleh), resample=Image.BILINEAR)
+
+        result = imgSmall.resize(img.size, Image.NEAREST)  # Scale back up using NEAREST to original size
+        result.save('alg-img/result.png')  # Save on jpg or png
+        self.changeScale()
 
 def main():
     app = QtWidgets.QApplication(sys.argv)

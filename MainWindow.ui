@@ -311,7 +311,7 @@ border: 0;</string>
                  <number>20</number>
                 </property>
                 <item row="2" column="3">
-                 <widget class="QPushButton" name="save">
+                 <widget class="QPushButton" name="saveBtn">
                   <property name="minimumSize">
                    <size>
                     <width>230</width>
@@ -347,7 +347,7 @@ border: 0;
                  </widget>
                 </item>
                 <item row="0" column="3">
-                 <widget class="QPushButton" name="reset">
+                 <widget class="QPushButton" name="chooseBtn">
                   <property name="minimumSize">
                    <size>
                     <width>230</width>
@@ -378,7 +378,7 @@ border: 0;
 }</string>
                   </property>
                   <property name="text">
-                   <string>Сброс</string>
+                   <string>Выбрать файл</string>
                   </property>
                  </widget>
                 </item>
@@ -443,10 +443,10 @@ border-radius: 4px;
 </string>
                   </property>
                   <property name="minimum">
-                   <number>1</number>
+                   <number>2</number>
                   </property>
                   <property name="maximum">
-                   <number>350</number>
+                   <number>250</number>
                   </property>
                   <property name="value">
                    <number>150</number>
