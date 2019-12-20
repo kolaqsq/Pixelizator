@@ -3,7 +3,7 @@ import sys
 from PIL import Image
 from PyQt5 import QtWidgets
 from PyQt5.QtCore import *
-from PyQt5.QtGui import QPixmap
+from PyQt5.QtGui import QPixmap, QDesktopServices
 from PyQt5.QtWidgets import *
 from PyQt5.uic import loadUi
 import shutil
@@ -24,6 +24,8 @@ class MainWindow(QMainWindow):
         self.pixelizationLevelSlider.valueChanged[int].connect(self.changeValue)
         self.chooseBtn.clicked.connect(self.showOpenDialog)
         self.saveBtn.clicked.connect(self.showSaveDialog)
+        self.aboutLink.linkActivated.connect(self.link)
+        self.aboutLink.setText('<a href="https://github.com/kolaqsq/Pixelizator">Наш Github</a>')
 
     def changeValue(self, value):
         # slider from 1 to 350
@@ -82,6 +84,9 @@ class MainWindow(QMainWindow):
         # if user want to save nonexistent file
         if os.path.isfile('alg-img/result.png'):
             shutil.move('alg-img/result.png', fname)
+
+    def link(self, linkStr):
+        QDesktopServices.openUrl(QUrl(linkStr))
 
 def main():
     app = QtWidgets.QApplication(sys.argv)
