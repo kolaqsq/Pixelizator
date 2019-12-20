@@ -82,7 +82,7 @@ class MainWindow(QMainWindow):
     def showSaveDialog(self):
         fname = QFileDialog.getSaveFileName(self, 'Save file', 'c:\\', "Image files (*.png)")[0]
         # if user want to save nonexistent file
-        if os.path.isfile('alg-img/result.png'):
+        if os.path.isfile('alg-img/result.png') and fname != '':
             shutil.move('alg-img/result.png', fname)
 
     def link(self, linkStr):
