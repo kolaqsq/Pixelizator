@@ -46,7 +46,7 @@ class MainWindow(QMainWindow):
         # Resize smoothly down to scalew x scaleh pixels
         imgSmall = img.resize((scalew, scaleh), resample=Image.BILINEAR)
 
-        result = imgSmall.resize(img.size, Image.NEAREST)  # Scale back up using NEAREST to original size
+        result = imgSmall.convert("P", palette=Image.ADAPTIVE).resize(img.size, Image.NEAREST)  # Scale back up using NEAREST to original size
         result.save('alg-img/result.png')  # Save on jpg or png
         self.changeScale()
 
