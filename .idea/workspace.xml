@@ -2,23 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67337806-689e-49b3-99da-73a5d48ae0fb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/sources/exitDark.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sources/exitLight.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sources/maximizeDark.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sources/maximizeLight.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sources/minimizeDark.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sources/minimizeLight.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainWindow.ui" beforeDir="false" afterPath="$PROJECT_DIR$/MainWindow.ui" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pixelizator.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pixelizator.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/alg-img/result.png" beforeDir="false" afterPath="$PROJECT_DIR$/alg-img/result.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dark.css" beforeDir="false" afterPath="$PROJECT_DIR$/dark.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/iconHome.png" beforeDir="false" afterPath="$PROJECT_DIR$/sources/homeLight.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/iconHomeLight.png" beforeDir="false" afterPath="$PROJECT_DIR$/sources/homeDark.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/iconSettings.png" beforeDir="false" afterPath="$PROJECT_DIR$/sources/settingsLight.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/iconSettingsLight.png" beforeDir="false" afterPath="$PROJECT_DIR$/sources/settingsDark.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/light.css" beforeDir="false" afterPath="$PROJECT_DIR$/light.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nyan-cat1.ico" beforeDir="false" afterPath="$PROJECT_DIR$/Pixelizator.ico" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,9 +14,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="CSS File" />
         <option value="Qt UI file" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -47,12 +33,17 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/build/nsis" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\kolaq\PycharmProjects\Pixelizator\sources" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\kolaq\PycharmProjects\Pixelizator\build\nsis" />
+      <recent name="C:\Users\kolaq\PycharmProjects\Pixelizator\Pixelizator" />
     </key>
   </component>
   <component name="RunManager" selected="Python.Pixelizator">
@@ -100,6 +91,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Pixelizator.launch.pyw" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Pixelizator" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/build/nsis" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/build/nsis/Pixelizator.launch.pyw" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="d" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Pixelizator" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -122,8 +135,32 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="eee" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Pixelizator" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/eee.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Pixelizator.launch.pyw" />
+        <item itemvalue="Python.eee" />
         <item itemvalue="Python.PixelizatorTest" />
         <item itemvalue="Python.d" />
       </list>
@@ -160,7 +197,12 @@
       <workItem from="1576928654686" duration="471000" />
       <workItem from="1576999389597" duration="1969000" />
       <workItem from="1577007036046" duration="17891000" />
-      <workItem from="1577036918980" duration="8188000" />
+      <workItem from="1577036918980" duration="10332000" />
+      <workItem from="1577051420850" duration="613000" />
+      <workItem from="1577053659649" duration="274000" />
+      <workItem from="1577053949648" duration="3229000" />
+      <workItem from="1577057205992" duration="633000" />
+      <workItem from="1577057857201" duration="786000" />
     </task>
     <task id="LOCAL-00001" summary="Set slider invert appearance">
       <created>1576825914191</created>
@@ -211,7 +253,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576869537735</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Finished algorithm, added themes, added title bar">
+      <created>1577048271071</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1577048271071</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -238,41 +287,46 @@
     <MESSAGE value="UI improvement, added working github link" />
     <MESSAGE value="Set picture on begin" />
     <MESSAGE value="Debug saving algorithm when try to close save dialog" />
-    <option name="LAST_COMMIT_MESSAGE" value="Debug saving algorithm when try to close save dialog" />
+    <MESSAGE value="Finished algorithm, added themes, added title bar" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished algorithm, added themes, added title bar" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="372" y="0" key="CommitChangelistDialog2" timestamp="1577048154555">
+    <state x="519" y="213" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1577057621861">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="372" y="0" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1577048154555" />
-    <state width="1492" height="197" key="GridCell.Tab.0.bottom" timestamp="1577048188832">
+    <state x="519" y="213" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.834@0.0.1536.834" timestamp="1577057621861" />
+    <state x="372" y="0" key="CommitChangelistDialog2" timestamp="1577048270477">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="372" y="0" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1577048270477" />
+    <state width="1492" height="197" key="GridCell.Tab.0.bottom" timestamp="1577058642513">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1481" height="45" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.-228.1920.1040@0.0.1536.824" timestamp="1577023896359" />
     <state width="1865" height="125" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.-228.1920.1040@1920.-228.1920.1040" timestamp="1577032678871" />
     <state width="1865" height="71" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.-771.1920.1040@1920.-771.1920.1040" timestamp="1576929127620" />
-    <state width="1492" height="197" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1577048188832" />
-    <state width="1492" height="197" key="GridCell.Tab.0.center" timestamp="1577048188832">
+    <state width="1492" height="197" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1577058642513" />
+    <state width="1492" height="197" key="GridCell.Tab.0.center" timestamp="1577058642513">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1481" height="45" key="GridCell.Tab.0.center/0.0.1536.824/1920.-228.1920.1040@0.0.1536.824" timestamp="1577023896359" />
     <state width="1865" height="125" key="GridCell.Tab.0.center/0.0.1536.824/1920.-228.1920.1040@1920.-228.1920.1040" timestamp="1577032678871" />
     <state width="1865" height="71" key="GridCell.Tab.0.center/0.0.1536.824/1920.-771.1920.1040@1920.-771.1920.1040" timestamp="1576929127620" />
-    <state width="1492" height="197" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1577048188832" />
-    <state width="1492" height="197" key="GridCell.Tab.0.left" timestamp="1577048188832">
+    <state width="1492" height="197" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1577058642513" />
+    <state width="1492" height="197" key="GridCell.Tab.0.left" timestamp="1577058642513">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1481" height="45" key="GridCell.Tab.0.left/0.0.1536.824/1920.-228.1920.1040@0.0.1536.824" timestamp="1577023896359" />
     <state width="1865" height="125" key="GridCell.Tab.0.left/0.0.1536.824/1920.-228.1920.1040@1920.-228.1920.1040" timestamp="1577032678871" />
     <state width="1865" height="71" key="GridCell.Tab.0.left/0.0.1536.824/1920.-771.1920.1040@1920.-771.1920.1040" timestamp="1576929127620" />
-    <state width="1492" height="197" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1577048188832" />
-    <state width="1492" height="197" key="GridCell.Tab.0.right" timestamp="1577048188832">
+    <state width="1492" height="197" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1577058642513" />
+    <state width="1492" height="197" key="GridCell.Tab.0.right" timestamp="1577058642513">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1481" height="45" key="GridCell.Tab.0.right/0.0.1536.824/1920.-228.1920.1040@0.0.1536.824" timestamp="1577023896359" />
     <state width="1865" height="125" key="GridCell.Tab.0.right/0.0.1536.824/1920.-228.1920.1040@1920.-228.1920.1040" timestamp="1577032678871" />
     <state width="1865" height="71" key="GridCell.Tab.0.right/0.0.1536.824/1920.-771.1920.1040@1920.-771.1920.1040" timestamp="1576929127620" />
-    <state width="1492" height="197" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1577048188832" />
+    <state width="1492" height="197" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1577058642513" />
     <state width="1865" height="244" key="GridCell.Tab.1.bottom" timestamp="1577031823971">
       <screen x="1920" y="-228" width="1920" height="1040" />
     </state>
@@ -297,24 +351,32 @@
       <screen x="1920" y="-228" width="1920" height="1040" />
     </state>
     <state x="2512" y="-93" width="736" height="738" key="MultipleFileMergeDialog/0.0.1536.824/1920.-228.1920.1040@1920.-228.1920.1040" timestamp="1577001140039" />
-    <state x="2557" y="-671" width="1141" height="883" key="SettingsEditor" timestamp="1576929117576">
-      <screen x="1920" y="-771" width="1920" height="1040" />
+    <state x="554" y="125" width="914" height="709" key="SettingsEditor" timestamp="1577054365385">
+      <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="2557" y="-671" width="1141" height="883" key="SettingsEditor/0.0.1536.824/1920.-771.1920.1040@1920.-771.1920.1040" timestamp="1576929117576" />
-    <state x="2421" y="18" key="com.intellij.ide.util.TipDialog" timestamp="1577007035930">
-      <screen x="1920" y="-228" width="1920" height="1040" />
+    <state x="554" y="125" width="914" height="709" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1577054365385" />
+    <state x="361" y="151" key="Vcs.Push.Dialog.v2" timestamp="1577048273189">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="361" y="151" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1577048273189" />
+    <state x="401" y="197" key="com.intellij.ide.util.TipDialog" timestamp="1577057857020">
+      <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="2421" y="18" key="com.intellij.ide.util.TipDialog/0.0.1536.824/1920.-228.1920.1040@1920.-228.1920.1040" timestamp="1577007035930" />
     <state x="401" y="195" key="com.intellij.ide.util.TipDialog/0.0.1536.824/1920.-771.1920.1040@1920.-771.1920.1040" timestamp="1576928661118" />
-    <state x="591" y="334" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1577048142966">
+    <state x="401" y="197" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1577057857020" />
+    <state x="591" y="334" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1577048671439">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="2659" y="189" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824/1920.-228.1920.1040@1920.-228.1920.1040" timestamp="1577001033508" />
-    <state x="591" y="334" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.834@0.0.1536.834" timestamp="1577048142966" />
+    <state x="591" y="334" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.834@0.0.1536.834" timestamp="1577048671439" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Pixelizator$Pixelizator_launch_pyw.coverage" NAME="Pixelizator.launch.pyw Coverage Results" MODIFIED="1577058247049" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/build/nsis" />
     <SUITE FILE_PATH="coverage/Pixelizator$d.coverage" NAME="d Coverage Results" MODIFIED="1576831157807" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Pixelizator$PixelizatorTest.coverage" NAME="PixelizatorTest Coverage Results" MODIFIED="1577047952041" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Pixelizator$Pixelizator.coverage" NAME="Pixelizator Coverage Results" MODIFIED="1577048188828" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Pixelizator$Pixelizator.coverage" NAME="Pixelizator Coverage Results" MODIFIED="1577058642505" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Pixelizator$eee.coverage" NAME="eee Coverage Results" MODIFIED="1577057162754" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

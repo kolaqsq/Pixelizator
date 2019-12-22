@@ -13,7 +13,7 @@ from PyQt5.uic import loadUi
 class MainWindow(QMainWindow):
     def __init__(self, *args, **kwargs):
         super(MainWindow, self).__init__(*args, **kwargs)
-        loadUi("testMain.ui", self)
+        loadUi("MainWindow.ui", self)
 
         styleSheetStr = open('light.css', "r").read()
         self.mainPage.setStyleSheet(styleSheetStr)
