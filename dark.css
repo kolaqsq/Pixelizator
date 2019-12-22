@@ -1,0 +1,143 @@
+QWidget#mainPage{
+background-color: #1c1c1c;
+}
+
+QLabel#imageWindow{
+background-color: #2c2c2c;
+border: 0;
+}
+
+QLabel#pixelizationLevelLabel {
+color: #d9d9d9;
+}
+QSlider#pixelizationLevelSlider::groove:horizontal {
+border: 0;
+background-color: #7D7D7D;
+height: 3px;
+border-radius: 4px;
+}
+
+QSlider#pixelizationLevelSlider::sub-page:horizontal {
+background-color: #608DFF;
+border: 0;
+border-radius: 4px;
+}
+
+QSlider#pixelizationLevelSlider::add-page:horizontal {
+border: 0;
+border-radius: 4px;
+}
+
+QSlider#pixelizationLevelSlider::handle:horizontal {
+background: #608DFF;
+border: 0;
+width: 8px;
+height: 18px;
+margin-top: -10px;
+margin-bottom: -10px;
+border-radius: 4px;
+}
+
+QPushButton#chooseBtn:!hover {
+background-color: #2c2c2c;
+border: 0;
+color: #d9d9d9;
+}
+
+QPushButton#chooseBtn:hover {
+background-color: #464646;
+border: 0;
+color: #d9d9d9;
+}
+
+QPushButton#saveBtn:!hover {
+background-color: #2c2c2c;
+border: 0;
+color: #d9d9d9;
+}
+
+QPushButton#saveBtn:hover {
+background-color: #464646;
+border: 0;
+color: #d9d9d9;
+}
+
+QWidget#sidebar{
+    background-color: #2c2c2c;
+}
+
+QPushButton#home:!hover {
+background-color: #464646;
+border: 0;
+}
+
+QPushButton#home:hover {
+background-color: #464646;
+border: 0;
+}
+
+QPushButton#settings:!hover {
+background-color: #2c2c2c;
+border: 0;
+}
+
+QPushButton#settings:hover {
+background-color: #464646;
+border: 0;
+}
+/*Settings/////////////////////////////////////////////*/
+QWidget#settingsPage{
+background-color: #1c1c1c;
+}
+
+QWidget#settingsWin{
+background-color: #2c2c2c;
+}
+
+QWidget#settingsSidebar{
+background-color: #2c2c2c;
+}
+
+QPushButton#settingsHome:!hover {
+background-color: #2c2c2c;
+border: 0;
+}
+
+QPushButton#settingsHome:hover {
+background-color: #464646;
+border: 0;
+}
+
+QPushButton#settingsSettings:!hover {
+background-color: #464646;
+border: 0;
+}
+
+QPushButton#settingsSettings:hover {
+background-color: #464646;
+border: 0;
+}
+
+QLabel#theme{
+background-color: #2c2c2c;
+color: #d9d9d9;
+}
+
+QCheckBox#checkBoxTheme{
+background-color: #2c2c2c;
+color: #d9d9d9;
+}
+
+QLabel#about{
+background-color: #2c2c2c;
+color: #d9d9d9;
+}
+
+QLabel#aboutText{
+background-color: #2c2c2c;
+color: #d9d9d9;
+}
+
+QLabel#aboutLink {
+background-color: #2c2c2c;
+}

@@ -1,0 +1,124 @@
+QLabel#imageWindow{
+    background-color: rgb(222, 222, 227);
+    border: 0;
+}
+
+QSlider#pixelizationLevelSlider::groove:horizontal {
+border: 0;
+background-color: rgb(125, 125, 125);
+height: 3px;
+border-radius: 4px;
+}
+
+QSlider#pixelizationLevelSlider::sub-page:horizontal {
+background-color: #608DFF;
+border: 0;
+border-radius: 4px;
+}
+
+QSlider#pixelizationLevelSlider::add-page:horizontal {
+border: 0;
+border-radius: 4px;
+}
+
+QSlider#pixelizationLevelSlider::handle:horizontal {
+background: #608DFF;
+border: 0;
+width: 8px;
+height: 18px;
+margin-top: -10px;
+margin-bottom: -10px;
+border-radius: 4px;
+}
+
+QPushButton#chooseBtn:!hover {
+background-color: rgb(222, 222, 227);
+border: 0;
+}
+
+QPushButton#chooseBtn:hover {
+background-color: rgb(210, 208, 208);
+border: 0;
+}
+
+QPushButton#saveBtn:!hover {
+background-color: rgb(222, 222, 227);
+border: 0;
+}
+
+QPushButton#saveBtn:hover {
+background-color: rgb(210, 208, 208);
+border: 0;
+}
+
+QWidget#sidebar{
+    background-color: rgb(222, 222, 227);
+}
+
+QPushButton#home:!hover {
+background-color: rgb(210, 208, 208);
+border: 0;
+}
+
+QPushButton#home:hover {
+background-color: rgb(210, 208, 208);
+border: 0;
+}
+
+QPushButton#settings:!hover {
+background-color: rgb(222, 222, 227);
+border: 0;
+}
+
+QPushButton#settings:hover {
+background-color: rgb(210, 208, 208);
+border: 0;
+}
+
+QWidget#settingsWin{
+background-color: rgb(222, 222, 227);
+}
+
+QWidget#settingsSidebar{
+background-color: rgb(222, 222, 227);
+}
+
+QPushButton#settingsHome:!hover {
+background-color: rgb(222, 222, 227);
+border: 0;
+}
+
+QPushButton#settingsHome:hover {
+background-color: rgb(210, 208, 208);
+border: 0;
+}
+
+QPushButton#settingsSettings:!hover {
+background-color: rgb(210, 208, 208);
+border: 0;
+}
+
+QPushButton#settingsSettings:hover {
+background-color: rgb(210, 208, 208);
+border: 0;
+}
+
+QLabel#theme{
+background-color: rgb(222, 222, 227);
+}
+
+QCheckBox#checkBoxTheme{
+background-color: rgb(222, 222, 227);
+}
+
+QLabel#about{
+background-color: rgb(222, 222, 227);
+}
+
+QLabel#aboutText{
+background-color: rgb(222, 222, 227);
+}
+
+QLabel#aboutLink{
+background-color: rgb(222, 222, 227);
+}

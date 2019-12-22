@@ -29,8 +29,7 @@
    <string>Pixelizator</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgb(238, 238, 242);
-border: 0;</string>
+   <string notr="true"/>
   </property>
   <widget class="QWidget" name="centralWidget">
    <property name="enabled">
@@ -43,8 +42,7 @@ border: 0;</string>
     </sizepolicy>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(238, 238, 242);
-border: 0;</string>
+    <string notr="true"/>
    </property>
    <layout class="QHBoxLayout" name="centralWidgetLayout">
     <property name="spacing">
@@ -123,7 +121,7 @@ border: 0;</string>
               </size>
              </property>
              <property name="styleSheet">
-              <string notr="true">background-color: rgb(222, 222, 227);</string>
+              <string notr="true"/>
              </property>
              <layout class="QVBoxLayout" name="sidebarLayout" stretch="0,0,0">
               <property name="spacing">
@@ -159,15 +157,7 @@ border: 0;</string>
                  </size>
                 </property>
                 <property name="styleSheet">
-                 <string notr="true">QPushButton:!hover {
-background-color: rgb(210, 208, 208);
-border: 0;
-}
-
-QPushButton:hover {
-background-color: rgb(210, 208, 208);
-border: 0;
-}</string>
+                 <string notr="true"/>
                 </property>
                 <property name="text">
                  <string/>
@@ -224,15 +214,7 @@ border: 0;
                  </size>
                 </property>
                 <property name="styleSheet">
-                 <string notr="true">QPushButton:!hover {
-background-color: rgb(222, 222, 227);
-border: 0;
-}
-
-QPushButton:hover {
-background-color: rgb(210, 208, 208);
-border: 0;
-}</string>
+                 <string notr="true"/>
                 </property>
                 <property name="text">
                  <string/>
@@ -291,8 +273,7 @@ border: 0;
                  </size>
                 </property>
                 <property name="styleSheet">
-                 <string notr="true">background-color: rgb(222, 222, 227);
-border: 0;</string>
+                 <string notr="true"/>
                 </property>
                 <property name="text">
                  <string/>
@@ -331,15 +312,7 @@ border: 0;</string>
                    </font>
                   </property>
                   <property name="styleSheet">
-                   <string notr="true">QPushButton:!hover {
-background-color: rgb(222, 222, 227);
-border: 0;
-}
-
-QPushButton:hover {
-background-color: rgb(210, 208, 208);
-border: 0;
-}</string>
+                   <string notr="true"/>
                   </property>
                   <property name="text">
                    <string>Сохранить</string>
@@ -367,15 +340,7 @@ border: 0;
                    </font>
                   </property>
                   <property name="styleSheet">
-                   <string notr="true">QPushButton:!hover {
-background-color: rgb(222, 222, 227);
-border: 0;
-}
-
-QPushButton:hover {
-background-color: rgb(210, 208, 208);
-border: 0;
-}</string>
+                   <string notr="true"/>
                   </property>
                   <property name="text">
                    <string>Выбрать файл</string>
@@ -413,34 +378,7 @@ border: 0;
                    </size>
                   </property>
                   <property name="styleSheet">
-                   <string notr="true">QSlider::groove:horizontal {
-border: 0;
-background-color: rgb(125, 125, 125);
-height: 3px;
-border-radius: 4px;
-}
-
-QSlider::sub-page:horizontal {
-background-color: #608DFF;
-border: 0;
-border-radius: 4px;
-}
-
-QSlider::add-page:horizontal {
-border: 0;
-border-radius: 4px;
-}
-
-QSlider::handle:horizontal {
-background: #608DFF;
-border: 0;
-width: 8px;
-height: 18px;
-margin-top: -10px;
-margin-bottom: -10px;
-border-radius: 4px;
-}
-</string>
+                   <string notr="true"/>
                   </property>
                   <property name="minimum">
                    <number>2</number>
@@ -569,7 +507,7 @@ border-radius: 4px;
               </size>
              </property>
              <property name="styleSheet">
-              <string notr="true">background-color: rgb(222, 222, 227);</string>
+              <string notr="true"/>
              </property>
              <layout class="QVBoxLayout" name="settingsSidebarLayout" stretch="0,0,0">
               <property name="spacing">
@@ -605,15 +543,7 @@ border-radius: 4px;
                  </size>
                 </property>
                 <property name="styleSheet">
-                 <string notr="true">QPushButton:!hover {
-background-color: rgb(222, 222, 227);
-border: 0;
-}
-
-QPushButton:hover {
-background-color: rgb(210, 208, 208);
-border: 0;
-}</string>
+                 <string notr="true"/>
                 </property>
                 <property name="text">
                  <string/>
@@ -670,15 +600,7 @@ border: 0;
                  </size>
                 </property>
                 <property name="styleSheet">
-                 <string notr="true">QPushButton:!hover {
-background-color: rgb(210, 208, 208);
-border: 0;
-}
-
-QPushButton:hover {
-background-color: rgb(210, 208, 208);
-border: 0;
-}</string>
+                 <string notr="true"/>
                 </property>
                 <property name="text">
                  <string/>
@@ -716,8 +638,7 @@ border: 0;
               </size>
              </property>
              <property name="styleSheet">
-              <string notr="true">background-color: rgb(238, 238, 242);
-border: 0;</string>
+              <string notr="true"/>
              </property>
              <layout class="QVBoxLayout" name="settingsAreaLayout" stretch="0">
               <property name="spacing">
@@ -736,10 +657,9 @@ border: 0;</string>
                <number>50</number>
               </property>
               <item>
-               <widget class="QWidget" name="settingsWindow" native="true">
+               <widget class="QWidget" name="settingsWin" native="true">
                 <property name="styleSheet">
-                 <string notr="true">background-color: rgb(222, 222, 227);
-border: 0;</string>
+                 <string notr="true"/>
                 </property>
                 <layout class="QVBoxLayout" name="settingsWindowLayout">
                  <property name="spacing">
@@ -834,21 +754,12 @@ border: 0;</string>
                     </spacer>
                    </item>
                    <item>
-                    <widget class="QPushButton" name="toggle">
-                     <property name="minimumSize">
-                      <size>
-                       <width>50</width>
-                       <height>40</height>
-                      </size>
-                     </property>
-                     <property name="maximumSize">
-                      <size>
-                       <width>50</width>
-                       <height>40</height>
-                      </size>
+                    <widget class="QCheckBox" name="checkBoxTheme">
+                     <property name="styleSheet">
+                      <string notr="true"/>
                      </property>
                      <property name="text">
-                      <string>PushButton</string>
+                      <string>Темная тема</string>
                      </property>
                     </widget>
                    </item>
