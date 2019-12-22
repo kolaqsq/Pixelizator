@@ -1,2 +1,11 @@
 # Pixelizator
-Program for creating pixel arts from provided images
+
+Программа, преобразующая изображение в пиксель-арт
+
+Разработчики - студенты Московского Политеха группы 191-321:
+Огородников Н.А. kolaqsq@gmail.com
+Мажаев В.С. Little.cado1@gmail.com
+
+Приложение разработано с помощью технологий:
+Библиотеки: PyQt5, PIL, shutil, sys, os.path
+Среды разработки: PyCharm, Figma, QtDesigner
