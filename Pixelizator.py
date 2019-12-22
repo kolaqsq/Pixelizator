@@ -3,8 +3,8 @@ import shutil
 import sys
 
 from PIL import Image
-from PyQt5 import QtWidgets, QtCore
-from PyQt5.QtCore import Qt, QUrl
+from PyQt5 import QtWidgets
+from PyQt5.QtCore import Qt, QUrl, QPointF
 from PyQt5.QtGui import QPixmap, QDesktopServices, QIcon
 from PyQt5.QtWidgets import QMainWindow, QFileDialog
 from PyQt5.uic import loadUi
@@ -13,20 +13,74 @@ from PyQt5.uic import loadUi
 class MainWindow(QMainWindow):
     def __init__(self, *args, **kwargs):
         super(MainWindow, self).__init__(*args, **kwargs)
-        loadUi("MainWindow.ui", self)
+        loadUi("testMain.ui", self)
 
         styleSheetStr = open('light.css', "r").read()
         self.mainPage.setStyleSheet(styleSheetStr)
         self.settingsPage.setStyleSheet(styleSheetStr)
+        self.titlebar.setStyleSheet(styleSheetStr)
+
+        self.setWindowFlags(Qt.CustomizeWindowHint)
 
         self.settings.clicked.connect(lambda: MainWindow.change(self, 1))
         self.settingsHome.clicked.connect(lambda: MainWindow.change(self, 0))
-
         self.checkBoxTheme.stateChanged.connect(lambda: self.changeTheme())
+
+        self.minimize.clicked.connect(lambda: self.showMinimized())
+        self.maximize.clicked.connect(lambda: self.maxRestore())
+        self.exit.clicked.connect(self.close)
         self.show()
 
     def change(self, i):
         self.pages.setCurrentIndex(i)
+
+    def changeTheme(self):
+        if self.checkBoxTheme.isChecked() == True:
+            styleSheetStr = open('dark.css', "r").read()
+            self.mainPage.setStyleSheet(styleSheetStr)
+            self.settingsPage.setStyleSheet(styleSheetStr)
+            self.titlebar.setStyleSheet(styleSheetStr)
+
+            self.settingsHome.setIcon(QIcon('sources/homeDark.png'))
+            self.settingsSettings.setIcon(QIcon('sources/settingsDark.png'))
+            self.home.setIcon(QIcon('sources/homeDark.png'))
+            self.settings.setIcon(QIcon('sources/settingsDark.png'))
+            self.minimize.setIcon(QIcon('sources/minimizeDark.png'))
+            self.maximize.setIcon(QIcon('sources/maximizeDark.png'))
+            self.exit.setIcon(QIcon('sources/exitDark.png'))
+        else:
+            styleSheetStr = open('light.css', "r").read()
+            self.mainPage.setStyleSheet(styleSheetStr)
+            self.settingsPage.setStyleSheet(styleSheetStr)
+            self.titlebar.setStyleSheet(styleSheetStr)
+
+            self.settingsHome.setIcon(QIcon('sources/homeLight.png'))
+            self.settingsSettings.setIcon(QIcon('sources/settingsLight.png'))
+            self.home.setIcon(QIcon('sources/homeLight.png'))
+            self.settings.setIcon(QIcon('sources/settingsLight.png'))
+            self.minimize.setIcon(QIcon('sources/minimizeLight.png'))
+            self.maximize.setIcon(QIcon('sources/maximizeLight.png'))
+            self.exit.setIcon(QIcon('sources/exitLight.png'))
+
+    def maxRestore(self):
+        global mode
+        if mode:
+            self.showMaximized()
+            mode = False
+        else:
+            self.showNormal()
+            mode = True
+
+    def mousePressEvent(self, event):
+        if QPointF.y(event.localPos()) <= QPointF.y(QPointF(0.0, 30.0)) and event.button() == Qt.LeftButton:
+            self.moving = True
+            self.offset = event.pos()
+        else:
+            self.moving = False
+
+    def mouseMoveEvent(self, event):
+        if self.moving:
+            self.move(event.globalPos() - self.offset)
 
     def init_ui(self):
         self.pixelizationLevelSlider.valueChanged[int].connect(self.changeValue)
@@ -53,7 +107,8 @@ class MainWindow(QMainWindow):
         # Resize smoothly down to scalew x scaleh pixels
         imgSmall = img.resize((scalew, scaleh), resample=Image.BILINEAR)
 
-        result = imgSmall.convert("P", palette=Image.ADAPTIVE).resize(img.size, Image.NEAREST)  # Scale back up using NEAREST to original size
+        result = imgSmall.convert("P", palette=Image.ADAPTIVE).resize(img.size,
+                                                                      Image.NEAREST)  # Scale back up using NEAREST to original size
         result.save('alg-img/result.png')  # Save on jpg or png
         self.changeScale()
 
@@ -83,7 +138,8 @@ class MainWindow(QMainWindow):
         # Resize smoothly down to scalew x scaleh pixels
         imgSmall = img.resize((scalew, scaleh), resample=Image.BILINEAR)
 
-        result = imgSmall.resize(img.size, Image.NEAREST)  # Scale back up using NEAREST to original size
+        result = imgSmall.convert("P", palette=Image.ADAPTIVE).resize(img.size,
+                                                                      Image.NEAREST)  # Scale back up using NEAREST to original size
         result.save('alg-img/result.png')  # Save on jpg or png
         self.changeScale()
 
@@ -108,30 +164,10 @@ class MainWindow(QMainWindow):
         # Resize smoothly down to scalew x scaleh pixels
         imgSmall = img.resize((scalew, scaleh), resample=Image.BILINEAR)
 
-        result = imgSmall.resize(img.size, Image.NEAREST)  # Scale back up using NEAREST to original size
+        result = imgSmall.convert("P", palette=Image.ADAPTIVE).resize(img.size,
+                                                                      Image.NEAREST)  # Scale back up using NEAREST to original size
         result.save('alg-img/result.png')  # Save on jpg or png
         self.changeScale()
-
-    def changeTheme(self):
-        if self.checkBoxTheme.isChecked() == True:
-            styleSheetStr = open('dark.css', "r").read()
-            self.mainPage.setStyleSheet(styleSheetStr)
-            self.settingsPage.setStyleSheet(styleSheetStr)
-
-            self.settingsHome.setIcon(QIcon('images/iconHomeLight.png'))
-            self.settingsSettings.setIcon(QIcon('images/iconSettingsLight.png'))
-            self.home.setIcon(QIcon('images/iconHomeLight.png'))
-            self.settings.setIcon(QIcon('images/iconSettingsLight.png'))
-        else:
-            styleSheetStr = open('light.css', "r").read()
-            self.mainPage.setStyleSheet(styleSheetStr)
-            self.settingsPage.setStyleSheet(styleSheetStr)
-
-            self.settingsHome.setIcon(QIcon('images/iconHome.png'))
-            self.settingsSettings.setIcon(QIcon('images/iconSettings.png'))
-            self.home.setIcon(QIcon('images/iconHome.png'))
-            self.settings.setIcon(QIcon('images/iconSettings.png'))
-        print(1)
 
 
 def main():
@@ -142,5 +178,6 @@ def main():
     app.exec_()
 
 
+mode = True
 if __name__ == '__main__':
     main()

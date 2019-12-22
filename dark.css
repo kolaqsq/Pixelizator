@@ -1,3 +1,64 @@
+QMainWindow#MainWindow{
+background-color: #1c1c1c;
+}
+
+QWidget#centralWidget{
+background-color: #1c1c1c;
+}
+
+/*titlebar*/
+QWidget#titlebar{
+background-color: #242424;
+border: 0;
+}
+
+QPushButton#appIcon:!hover {
+background-color: #242424;
+border: 0;
+}
+
+QPushButton#appIcon:hover {
+background-color: #242424;
+border: 0;
+}
+
+QLabel#appName{
+color: #d9d9d9;
+background-color: #242424;
+border: 0;
+}
+
+QToolButton#minimize:!hover {
+background-color: #242424;
+border: 0;
+}
+
+QToolButton#minimize:hover {
+background-color: #3f3f43;
+border: 1px solid #242424;
+}
+
+QToolButton#maximize:!hover {
+background-color: #242424;
+border: 0;
+}
+
+QToolButton#maximize:hover {
+background-color: #3f3f43;
+border: 1px solid #242424;
+}
+
+QToolButton#exit:!hover {
+background-color: #242424;
+border: 0;
+}
+
+QToolButton#exit:hover {
+background-color: #ce0b00;
+border: 1px solid #242424;
+}
+
+/*main*/
 QWidget#mainPage{
 background-color: #1c1c1c;
 }
@@ -10,6 +71,7 @@ border: 0;
 QLabel#pixelizationLevelLabel {
 color: #d9d9d9;
 }
+
 QSlider#pixelizationLevelSlider::groove:horizontal {
 border: 0;
 background-color: #7D7D7D;
@@ -85,12 +147,13 @@ QPushButton#settings:hover {
 background-color: #464646;
 border: 0;
 }
-/*Settings/////////////////////////////////////////////*/
+
+/*settings*/
 QWidget#settingsPage{
 background-color: #1c1c1c;
 }
 
-QWidget#settingsWin{
+QWidget#settingsWindow{
 background-color: #2c2c2c;
 }
 
